@@ -8,10 +8,9 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge(age, conversion = 0) {
+function calculateDogAge(age, conversion = 7) {
   // Your code goes here
-  conversion = age / 7;
-  return `Dogs age is ${conversion} years` ;
+  return age * conversion ;
 }
 
 /*
@@ -23,7 +22,7 @@ function calculateDogAge(age, conversion = 0) {
 
 function calculateMoviesToWatch(age, number) {
   // Your code goes here
-  const maxAge = 60;
+  const maxAge = 80;
   age = maxAge - age;
   let moviesPerMonth = 4 * number;
   let moviesPerYear = moviesPerMonth * 12;
@@ -38,7 +37,7 @@ function calculateMoviesToWatch(age, number) {
 
 function celsiusToFahrenheit(temperature) {
   // Your code goes here
-  conversion = (temperature * (9 / 5)) + 32;
+  let conversion = (temperature * (9 / 5)) + 32;
   return `${conversion}\u00B0 F is ${temperature}\u00B0 C`;
 }
 
@@ -50,7 +49,7 @@ function celsiusToFahrenheit(temperature) {
 
 function celsiusToFahrenheit(temperature) {
   // Your code goes here
-  conversion = (temperature - 32) * (5 / 9);
+  let conversion = (temperature - 32) * (5 / 9);
   return `${temperature}\u00B0 F is ${conversion}\u00B0 C`;
 }
 
