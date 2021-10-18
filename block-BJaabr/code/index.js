@@ -65,7 +65,7 @@ addOne(10);
 let returnValue = addOne(10);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+// typeof returnValue is "number"
 
 /* 2. Subtract one
 
@@ -99,7 +99,7 @@ substractOne(5);
 let returnValue = substractOne(3);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+// typeof returnValue is "number"
 
 /* 3. Add two numbers
 
@@ -133,7 +133,7 @@ sum(5, 6);
 let returnValue = sum (2, 3);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+// typeof returnValue is "number"
 
 /* 4. Square of the given value
 
@@ -168,7 +168,7 @@ square(5);
 let returnValue = square (2);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+// typeof returnValue is "number"
 
 /* 5. Find isGreater
 
@@ -178,7 +178,7 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-function sum (x, y) {
+function isGreater (x, y) {
   if (x > y) {
     return true;
   }else {
@@ -188,7 +188,7 @@ function sum (x, y) {
 
 
 // - Write a Function Expression
-let sum = function (x, y){
+let isGreater = function (x, y){
   if (x > y) {
     return true;
   }else {
@@ -197,9 +197,10 @@ let sum = function (x, y){
 }
 
 // - Write an Arrow Function without curly brackets(if possible)
+let isGreater = (x, y) => x > y ? true : false;
 
 // - Write an Arrow Function with curly brackets
-let sum = (x, y) => {
+let isGreater = (x, y) => {
   if (x > y) {
     return true;
   }else {
@@ -208,10 +209,10 @@ let sum = (x, y) => {
 }
 
 // - Execute the function
-sum(5, 6);
+isGreater(5, 6);
 
 // - Execute the function and store the return value in a variable
-let returnValue = sum(3, 6);
+let returnValue = isGreater(3, 6);
 
 // - What is the typeof returnValue
 // typeof returnValue is boolean
@@ -254,6 +255,7 @@ let oddOrEven = function namedFunction (num) {
 }
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
+let oddOrEven = (num) => num % 2 === 0 ? `Number is even` : `Number is odd`;
 
 // - Write an Arrow Function with curly brackets
 let oddOrEven = (num) {
@@ -273,4 +275,4 @@ oddOrEven(5);
 let returnValue = oddOrEven(6);
 
 // - What is the typeof returnValue
-// typeof returnValue is "string"
+// typeof returnValue is "number"
