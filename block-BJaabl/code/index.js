@@ -39,7 +39,7 @@ addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 function addTwoNumbers (firstNum, secondNum) {
-  if(firstNum === Number && secondNum === Number) {
+  if(typeof firstNum === 'number' && typeof secondNum === 'number') {
     return firstNum + secondNum;
   }else {
     alert (`Enter Valid Input`);
@@ -67,7 +67,7 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 function calc(numA, numB, operation) {
-  if (numA === Number && numB === Number){
+  if (typeof numA === `number` && typeof numB === `number`){
     switch(operation) {
       case 'add': return numA + numB;
       break;
@@ -100,11 +100,11 @@ isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
 function isLeapYear(year){
-  if (year / 400 === 0){
+  if (year % 400 === 0){
     return true;
-  } else if (year / 100 === 0){
+  } else if (year % 100 === 0){
     return false;
-  } else if(year / 4 === 0){
+  } else if(year % 4 === 0){
     return true;
   } else {
     return false;
