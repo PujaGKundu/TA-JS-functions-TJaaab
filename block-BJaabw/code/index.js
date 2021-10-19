@@ -16,6 +16,7 @@ function minToSec(min) {
   return min * 60;
 }
 // - Execute the function with required parameter
+minToSec(12);
 
 /* 2. 
 Create a function named isInRange which validates whether a number n is exclusively within the bounds of lower and upper.
@@ -29,13 +30,10 @@ isInRange(1, 10, 19); // false
 // - Write a Function Decleration for above problem
 function isInRange(lower, upper, n) {
   // Your code
-  if(lower >= n || n <= upper){
-    return true;
-  }else {
-    return false;
-  }
+  return n > lower && n < upper;
 }
 // - Execute the function with required parameter
+isInRange(1, 20, 9);
 
 /* 2. calculateBMI
 
@@ -57,12 +55,12 @@ Obese: BMI is 30 or more
 
 function calculateBMI(weight, height) {
   // Your code
-  bmi = weight/ (height * height);
+  let bmi = weight/ (height * height);
   if (bmi <= 18.5){
     return `Underweight`;
-  }else if (bmi >= 18.5 || bmi <= 24.9){
+  }else if (bmi >= 18.5 && bmi <= 24.9){
     return `Normal weight`;
-  }else if (bmi >= 25 || bmi <= 29.9){
+  }else if (bmi >= 25 && bmi <= 29.9){
     return `Overweight`;
   }else{
     return `Obese`;
